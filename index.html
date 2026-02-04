@@ -27,10 +27,31 @@
     }
 		/* Responsive Flexbox Fix */
 @media screen and (max-width: 736px) {
-    /* Targets the flex containers you created for PRH and HarperCollins */
-    div[style*="display: flex"] {
+    /* Only targets the content flex containers for stacking */
+    .content section > div[style*="display: flex"] { /* More specific selector */
         flex-direction: column !important;
         align-items: center !important;
+    }
+
+    /* Adjust the main header on mobile for better centering if needed */
+    #header .inner { /* Assuming #header is your main header container, or adjust this selector */
+        text-align: center !important;
+    }
+
+    /* Ensure your profile image and text are centered on mobile */
+    .profile-section { /* You might need to add this class to your profile div */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .profile-section img {
+        margin: 0 auto !important; /* Forces image to center */
+    }
+
+    /* Add some mobile padding to the main content area */
+    #main > .inner {
+        padding: 1.5em !important; /* Increase padding from default for better edge spacing */
     }
 
     /* Ensures the image containers take up full width on mobile */
@@ -497,6 +518,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 	</body>
 
 </html>
+
 
 
 
