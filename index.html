@@ -11,7 +11,17 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 	<style>
-    /* Targeting the main body text for better readability */
+    /* Unifying the Profile Subtitle with the Case Study font */
+.profile-section p, 
+#header p {
+    font-family: "Source Sans Pro", Helvetica, sans-serif !important;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.8em; /* Adjusted to match the 'Case Study' scale */
+    color: #555555 !important;
+}
+		
+	/* Targeting the main body text for better readability */
     body, p, ul li, ol li {
         color: #333333 !important; /* A deep charcoal that is easier on the eyes than pure black */
     }
@@ -518,6 +528,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 	</body>
 
 </html>
+
 
 
 
