@@ -25,6 +25,33 @@
     .stats, .meta, .published {
         color: #555555 !important;
     }
+		/* Responsive Flexbox Fix */
+@media screen and (max-width: 736px) {
+    /* Targets the flex containers you created for PRH and HarperCollins */
+    div[style*="display: flex"] {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    /* Ensures the image containers take up full width on mobile */
+    div[style*="flex: 1"], div[style*="flex: 2"] {
+        width: 100% !important;
+        max-width: 100% !important;
+        flex: none !important;
+    }
+
+    /* Adds some breathing room between the stacked image and text */
+    div[style*="flex: 1"] {
+        margin-bottom: 20px;
+    }
+}
+
+/* Global Image Safety Rule */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
 </style>
 	</head>
 	<body class="is-preload">
