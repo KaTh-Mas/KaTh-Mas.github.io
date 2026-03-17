@@ -5,158 +5,283 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Kathiana Thomas</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+
+<head>
+	<title>Kathiana Thomas</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
 	<style>
-    /* Targeting the main body text for better readability */
-    body, p, ul li, ol li {
-        color: #333333 !important; /* A deep charcoal that is easier on the eyes than pure black */
-    }
+		/* Targeting the main body text for better readability */
+		body,
+		p,
+		ul li,
+		ol li {
+			color: #333333 !important;
+			/* A deep charcoal that is easier on the eyes than pure black */
+		}
 
-    /* Ensuring headings stay sharp */
-    h1, h2, h3, h4, h5, h6 {
-        color: #222222 !important;
-    }
+		/* Ensuring headings stay sharp */
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			color: #222222 !important;
+		}
 
-    /* Keeping your stats and meta-text slightly softer but still readable */
-    .stats, .meta, .published {
-        color: #555555 !important;
-    }
+		/* Keeping your stats and meta-text slightly softer but still readable */
+		.stats,
+		.meta,
+		.published {
+			color: #555555 !important;
+		}
+
 		/* Responsive Flexbox Fix */
-@media screen and (max-width: 736px) {
-    /* Targets the flex containers you created for PRH and HarperCollins */
-    div[style*="display: flex"] {
-        flex-direction: column !important;
-        align-items: center !important;
-    }
+		@media screen and (max-width: 736px) {
 
-    /* Ensures the image containers take up full width on mobile */
-    div[style*="flex: 1"], div[style*="flex: 2"] {
-        width: 100% !important;
-        max-width: 100% !important;
-        flex: none !important;
-    }
+			/* Targets the flex containers you created for PRH and HarperCollins */
+			div[style*="display: flex"] {
+				flex-direction: column !important;
+				align-items: center !important;
+			}
 
-    /* Adds some breathing room between the stacked image and text */
-    div[style*="flex: 1"] {
-        margin-bottom: 20px;
-    }
-}
+			/* Ensures the image containers take up full width on mobile */
+			div[style*="flex: 1"],
+			div[style*="flex: 2"] {
+				width: 100% !important;
+				max-width: 100% !important;
+				flex: none !important;
+			}
 
-/* Global Image Safety Rule */
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-</style>
-	</head>
-	<body class="is-preload">
+			/* Adds some breathing room between the stacked image and text */
+			div[style*="flex: 1"] {
+				margin-bottom: 20px;
+			}
+		}
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+		/* Global Image Safety Rule */
+		img {
+			max-width: 100%;
+			height: auto;
+			display: block;
+		}
+	</style>
+</head>
 
-				<!-- Header -->
-					<header id="header">
-						<h1><a href="index.html">Kathiana Thomas</a></h1>
-						<nav class="links">
-							<ul
-								<li><a href="about.html">About</a></li>
-								<li><a href="contact.html">Contact</a></li>
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<h1><a href="index.html">Kathiana Thomas</a></h1>
+			<nav class="links">
+				<ul <li><a href="about.html">About</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+			<nav class="main">
+				<ul>
+					<li class="search">
+						<a class="fa-search" href="#search">Search</a>
+						<form id="search" method="get" action="#">
+							<input type="text" name="query" placeholder="Search" />
+						</form>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- Post -->
+			<article class="post">
+				<header>
+					<div class="title">
+						<h2><a href="#">Una historia detrás de una editorial</a></h2>
+						<p>Estudio de caso: Trotalibros</p>
+					</div>
+					<div class="meta">
+						<time class="published" datetime="2026-02-01">February 16, 2026</time>
+						<a href="#" class="author"><span class="name">Kathiana Thomas</span><img
+								src="images/profile.jpg" alt="" /></a>
+					</div>
+				</header>
+				<span class="image featured"><img src="images/trotalibros.png" alt="Trotalibros Logo" /></span>
+				<p>¿Cómo una visión que empezó en YouTube llego a convertirse en una editorial que pudo enganchar
+					público?</p>
+				<p>
+				<h2>Un recorrido que empezó en YouTube</h2>
+				</p>
+				<p>Por allá en el 2012, Jan Arimany empezó a publicar contenido en su vlog de YouTube dedicado a
+					comentar y dar visiblidad las obras literarias que leía, convirtiéndose en lo que es conocido como
+					BooTuber, es decir un creador de contenidos mayormente asentado en YouTube que se dedica a compartir
+					y crear contenido vinculado al mundo de la literatura. Y, en efecto, la comunidad literaria de
+					YouTube no puede pasar desapercibida, considerando que algunas obras lograron una explosión en su
+					difusión a través de BookTube, como fue el caso de la aclamada obra de John Green, <a
+						href="https://www.tandfonline.com/doi/abs/10.1080/01972243.2024.2326226" target="_blank"
+						style="color: #1d9bf0; text-decoration: none; font-weight: bold;">
+						Looking for Alaska</a>, a principios de los 2010. Sin embargo, no fue hasta 2020 que Jan Arimany
+					dio vida a su propio proyecto editorial, llevando su blog al mundo de la publicación luego de haber
+					pasado casi una década pasando el contenido escrito en columnas al medio audiovisual. Este viaje fue
+					posible gracias a otras editoriales que le tendieron la mano al pequeño proyecto de Arimany, como la
+					casa Colofón, llegando a publicar alrededor de 16 títulos en 2022. No obstante, hay algo más que
+					destacar: es el papel que tuvo las redes sociales en el éxito de Trotalibros. Después de todo,
+					Arimany consiguió un público bastante fiel a su misión y amor por rescatar libros olvidados. Así
+					que, empecemos por desmenuzar la aventura de este editor por dos plataformas clave, YouTube e
+					Instagram.</p>
+				<p>
+				<h3>Un blog en YouTube</p>
+				</h3>
+				<p>Algo que ha caracterizado a la comunidad de BookTube es la posibilidad de discutir, elogiar y hacer
+					reseñas de una diversidad de obras literarias. Si bien Trotalibros se ha alejado del contenido más
+					comercial y que suele estar enfocado a públicos más jovenes, que viene a ser un grueso importante de
+					BookTube, y quizás más aun de BookTok. Sin embargo, Arimany ha sabido procurar un cierto balance
+					sobre el contenido que reseña.</p> 
+
+				<section style="margin-bottom: 50px;">
+
+					<div
+						style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; display: flex; gap: 20px; align-items: flex-start; margin-bottom: 20px; background-color: #fff;">
+
+						<div style="flex: 1; min-width: 250px;">
+							<a href="https://www.youtube.com/watch?v=LwNN_hcdR30" target="_blank">
+								<img src="images/ReseñaCienAñosdeSoledad.jpg" alt="Cien Años de Soledad Reseña"
+									style="width: 100%; border-radius: 5px; box-shadow: 3px 3px 10px rgba(0,0,0,0.1);">
+							</a>
+							<p style="font-size: 0.8em; text-align: center; margin-top: 10px;">
+								<em>Source: <a href="https://www.youtube.com/watch?v=LwNN_hcdR30"
+										target="_blank">Trotalibros on YouTube</a></em>
+							</p>
+						</div>
+
+						<div style="flex: 2;">
+							<ul style="line-height: 1.6;">
+								<li>En primera instancia, muchas de sus reseñas han abordado obras de escritores
+									clásicos como Fiódor Dostoyevski, Gabriel García Márquez, Emily Brontë y Don Quijote
+									de la Mancha. Dado que son autores de renombre, y considerados como clásicos de la
+									literatura en general o en ramas amplias de la misma, no sorprendería que hayan
+									suficientes lectores interesados en buscar contenido relacionado a los mismos en
+									YouTube.</li>
+								<li>Pero además, Arimany se involucra con las tendencias y hace uso de los llamados
+									BookTags de una manera que genera más <i>engagement</i> y llegar a más usuarios
+									cuando se recurre a etiquetas o tópicos que son tendencia en el mundo de la
+									literatura. Por ejemplo, cuando en 2024 fue publicada la novela de póstuma de
+									Gabriel García Márques, «Nos vemos en agosto», Arimany publicó un video abordando
+									esta polémica además de reseñar el libro. Así mismo, lleva años aprovechando la
+									temporada de nominaciones al Nobel de literatura para hablar de los autores
+									nominados y sacar reseñar particulares, como con la obra de Laszlo Krasznahorkai en
+									2025. Sumado a esto, a hecho uso de tendencias como «tour por mi biblioteca» y «top
+									de mis novelas del año», las cuales suelen generan bastantes visualizaciones entre
+									los internautas en cualquier +ambito por tratarse de recomendaciones rápidas.</li>
+								<li>Algo que diferencia al canal de YouTube de Trotalibros del resto de casas
+									editoriales, es que la presencia constante constante de Jan Arimany permite formar
+									un vínculo más personal. Que sea el editor de la casa editorial el que hable en
+									todos los videos, facilita que las interacciones entre usuarios y creador sea más
+									constante y cercana, por lo que, en lugar de una imagen impersonal, la imagen de
+									Trotalibros se vincula a una persona de carne y hueso que deja un poco de sí en la
+									internet y que abre un poco sus puertas al mundo.</li>
 							</ul>
-						</nav>
-						<nav class="main">
-							<ul>
-								<li class="search">
-									<a class="fa-search" href="#search">Search</a>
-									<form id="search" method="get" action="#">
-										<input type="text" name="query" placeholder="Search" />
-									</form>
-								</li>
-							</ul>
-						</nav>
-					</header>
+
+						</div>
+				</section>
 
 
-				<!-- Main -->
-					<div id="main">
+				<p>
+				<h3>Cómo contar una historia en imágenes: Instagram y el uso de la familiaridad</p>
+				</h3>
+				<p>Cabe destacar que Jan Arimany no tan solo ha hecho eco en la comunidad de BooTube, sino que también ha sabido llegar a Bookstagram, algo que que puede evidenciarse a través del relativo éxito que ha tenido su cuenta de IG, sino tanto en cuando a seguidores, sí en la fidelización de los mismos. </p> 
 
-						<!-- Post -->
-							<article class="post">
-								<header>
-									<div class="title">
-										<h2><a href="#">Una historia detrás de una editorial</a></h2>
-										<p>Estudio de caso: Trotalibros</p>
-									</div>
-									<div class="meta">
-										<time class="published" datetime="2026-02-01">February 16, 2026</time>
-										<a href="#" class="author"><span class="name">Kathiana Thomas</span><img src="images/profile.jpg" alt="" /></a>
-									</div>
-								</header>
-								<span class="image featured"><img src="images/trotalibros.png" alt="Trotalibros Logo" /></span>
-								<p>¿Cómo una visión que empezó en YouTube llego a convertirse en una editorial que pudo enganchar público?</p>
-								<p><h2>Un recorrido que empezó en YouTube</h2></p>
-								<p>Por allá en el 2012, Jan Arimany empezó a publicar contenido en su vlog de YouTube dedicado a comentar y dar visiblidad las obras literarias que leía, convirtiéndose en lo que es conocido como BooTuber, es decir un creador de contenidos mayormente asentado en YouTube que se dedica a compartir y crear contenido vinculado al mundo de la literatura. Y, en efecto, la comunidad literaria de YouTube no puede pasar desapercibida, considerando que algunas obras lograron una explosión en su difusión a través de BookTube, como fue el caso de la aclamada obra de John Green, <a href="https://www.tandfonline.com/doi/abs/10.1080/01972243.2024.2326226" target="_blank" style="color: #1d9bf0; text-decoration: none; font-weight: bold;">
-                                Looking for Alaska</a>, a principios de los 2010. Sin embargo, no fue hasta 2020 que Jan Arimany dio vida a su propio proyecto editorial, llevando su blog al mundo de la publicación luego de haber pasado casi una década pasando el contenido escrito en columnas al medio audiovisual. Este viaje fue posible gracias a otras editoriales que le tendieron la mano al pequeño proyecto de Arimany, como la casa Colofón, llegando a publicar alrededor de 16 títulos en 2022. No obstante, hay algo más que destacar: es el papel que tuvo las redes sociales en el éxito de Trotalibros. Después de todo, Arimany consiguió un público bastante fiel a su misión y amor por rescatar libros olvidados. Así que, empecemos por desmenuzar la aventura de este editor por dos plataformas clave, YouTube e Instagram.</p>
-								<p><h3>Un blog en YouTube</p></h3>
-								<p>Algo que ha caracterizado a la comunidad de BookTube es la posibilidad de discutir, elogiar y hacer reseñas de una diversidad de obras literarias. Si bien Trotalibros se ha alejado del contenido más comercial y que suele estar enfocado a públicos más jovenes, que viene a ser un grueso importante de BookTube, y quizás más aun de BookTok. Sin embargo, Arimany ha sabido procurar un cierto balance sobre el contenido que reseña.</p>  
+					<section style="margin-bottom: 50px;">
 
-<section style="margin-bottom: 50px;">
+						<div
+							style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; display: flex; gap: 20px; align-items: flex-start; margin-bottom: 20px; background-color: #fff;">
 
-<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; display: flex; gap: 20px; align-items: flex-start; margin-bottom: 20px; background-color: #fff;">
-    
-    <div style="flex: 1; min-width: 250px;">
-        <a href="https://www.youtube.com/watch?v=LwNN_hcdR30" target="_blank">
-            <img src="images/ReseñaCienAñosdeSoledad.jpg" alt="Cien Años de Soledad Reseña" style="width: 100%; border-radius: 5px; box-shadow: 3px 3px 10px rgba(0,0,0,0.1);">
-        </a>
-        <p style="font-size: 0.8em; text-align: center; margin-top: 10px;">
-            <em>Source: <a href="https://www.youtube.com/watch?v=LwNN_hcdR30" target="_blank">Trotalibros on YouTube</a></em>
-        </p>
-    </div>
+							<div style="flex: 1; min-width: 250px;">
+								<a href="https://www.youtube.com/watch?v=LwNN_hcdR30" target="_blank">
+									<img src="images/ReseñaCienAñosdeSoledad.jpg" alt="Cien Años de Soledad Reseña"
+										style="width: 100%; border-radius: 5px; box-shadow: 3px 3px 10px rgba(0,0,0,0.1);">
+								</a>
+								<p style="font-size: 0.8em; text-align: center; margin-top: 10px;">
+									<em>Source: <a href="https://www.youtube.com/watch?v=LwNN_hcdR30"
+											target="_blank">Trotalibros on YouTube</a></em>
+								</p>
+							</div>
 
-    <div style="flex: 2;">
-        <ul style="line-height: 1.6;">
-             <li>En primera instancia, muchas de sus reseñas han abordado obras de escritores clásicos como Fiódor Dostoyevski, Gabriel García Márquez, Emily Brontë y Don Quijote de la Mancha. Dado que son autores de renombre, y considerados como clásicos de la literatura en general o en ramas amplias de la misma, no sorprendería que hayan suficientes lectores interesados en buscar contenido relacionado a los mismos en YouTube.</li>
-            <li>Pero además, Arimany se involucra con las tendencias y hace uso de los llamados BookTags de una manera que genera más <i>engagement</i> y llegar a más usuarios cuando se recurre a etiquetas o tópicos que son tendencia en el mundo de la literatura. Por ejemplo, cuando en 2024 fue publicada la novela de póstuma de Gabriel García Márques, «Nos vemos en agosto», Arimany publicó un video abordando esta polémica además de reseñar el libro. Así mismo, lleva años aprovechando la temporada de nominaciones al Nobel de literatura para hablar de los autores nominados y sacar reseñar particulares, como con la obra de Laszlo Krasznahorkai en 2025. Sumado a esto, a hecho uso de tendencias como «tour por mi biblioteca» y «top de mis novelas del año», las cuales suelen generan bastantes visualizaciones entre los internautas en cualquier +ambito por tratarse de recomendaciones rápidas.</li>
-            <li>Algo que diferencia al canal de YouTube de Trotalibros del resto de casas editoriales, es que la presencia constante constante de Jan Arimany permite formar un vínculo más personal. Que sea el editor de la casa editorial el que hable en todos los videos, facilita que las interacciones entre usuarios y creador sea más constante y cercana, por lo que, en lugar de una imagen impersonal, la imagen de Trotalibros se vincula a una persona de carne y hueso que deja un poco de sí en la internet y que abre un poco sus puertas al mundo.</li>
-        </ul> 
-           
-    </div> 
-	</section>
+							<div style="flex: 2;">
+								<ul style="line-height: 1.6;">
+									<li>En primera instancia, muchas de sus reseñas han abordado obras de escritores
+										clásicos como Fiódor Dostoyevski, Gabriel García Márquez, Emily Brontë y Don
+										Quijote de la Mancha. Dado que son autores de renombre, y considerados como
+										clásicos de la literatura en general o en ramas amplias de la misma, no
+										sorprendería que hayan suficientes lectores interesados en buscar contenido
+										relacionado a los mismos en YouTube.</li>
+									<li>Pero además, Arimany se involucra con las tendencias y hace uso de los llamados
+										BookTags de una manera que genera más <i>engagement</i> y llegar a más usuarios
+										cuando se recurre a etiquetas o tópicos que son tendencia en el mundo de la
+										literatura. Por ejemplo, cuando en 2024 fue publicada la novela de póstuma de
+										Gabriel García Márques, «Nos vemos en agosto», Arimany publicó un video
+										abordando esta polémica además de reseñar el libro. Así mismo, lleva años
+										aprovechando la temporada de nominaciones al Nobel de literatura para hablar de
+										los autores nominados y sacar reseñar particulares, como con la obra de Laszlo
+										Krasznahorkai en 2025. Sumado a esto, a hecho uso de tendencias como «tour por
+										mi biblioteca» y «top de mis novelas del año», las cuales suelen generan
+										bastantes visualizaciones entre los internautas en cualquier +ambito por
+										tratarse de recomendaciones rápidas.</li>
+									<li>Algo que diferencia al canal de YouTube de Trotalibros del resto de casas
+										editoriales, es que la presencia constante constante de Jan Arimany permite
+										formar un vínculo más personal. Que sea el editor de la casa editorial el que
+										hable en todos los videos, facilita que las interacciones entre usuarios y
+										creador sea más constante y cercana, por lo que, en lugar de una imagen
+										impersonal, la imagen de Trotalibros se vincula a una persona de carne y hueso
+										que deja un poco de sí en la internet y que abre un poco sus puertas al mundo.
+									</li>
+								</ul>
 
+							</div>
+					</section>
 
+					</section>
 
-</section>
+					<footer style="clear: both; border-top: 1px solid #eee; margin-top: 40px; padding-top: 20px;">
+						<ul class="stats" style="display: flex; list-style: none; gap: 20px; padding: 0; margin: 0;">
+							<li><a href="#"
+									style="text-decoration: none; color: #999; font-size: 1em; font-weight: bold; text-transform: uppercase;">General</a>
+							</li>
+							<li><span class="icon solid fa-heart" style="color: #ff4b2b;"></span></li>
+							<li><span class="icon solid fa-comment" style="color: #1d9bf0;"></span></li>
+						</ul>
+					</footer>
 
-    <footer style="clear: both; border-top: 1px solid #eee; margin-top: 40px; padding-top: 20px;">
-        <ul class="stats" style="display: flex; list-style: none; gap: 20px; padding: 0; margin: 0;">
-            <li><a href="#" style="text-decoration: none; color: #999; font-size: 1em; font-weight: bold; text-transform: uppercase;">General</a></li>
-            <li><span class="icon solid fa-heart" style="color: #ff4b2b;"></span></li>
-            <li><span class="icon solid fa-comment" style="color: #1d9bf0;"></span></li>
-        </ul>
-    </footer>
+			</article>
+			<section id="footer"
+				style="margin-top: 40px; padding: 30px 0; border-top: 2px solid #f4f4f4; text-align: center;">
+				<ul class="icons"
+					style="list-style: none; display: flex; justify-content: center; gap: 30px; padding: 0;">
+					<li><a href="https://www.linkedin.com/in/kathiana-thomas-5a6288280" class="icon brands fa-linkedin"
+							target="_blank" style="font-size: 1rem;"><span class="label">Linkedin</span></a></li>
+					<li><a href="mailto:Kathryanna@gmail.com" class="icon solid fa-envelope"
+							style="font-size: 1rem;"><span class="label">Email</span></a></li>
+				</ul>
+				<p class="copyright" style="color: #bbb; font-size: 0.5rem; margin-top: 10px;">
+					&copy; Kathiana Thomas. Design based on <a href="http://html5up.net">HTML5 UP</a>.
+				</p>
+			</section>
 
-</article> <section id="footer" style="margin-top: 40px; padding: 30px 0; border-top: 2px solid #f4f4f4; text-align: center;">
-    <ul class="icons" style="list-style: none; display: flex; justify-content: center; gap: 30px; padding: 0;">
-        <li><a href="https://www.linkedin.com/in/kathiana-thomas-5a6288280" class="icon brands fa-linkedin" target="_blank" style="font-size: 1rem;"><span class="label">Linkedin</span></a></li>
-        <li><a href="mailto:Kathryanna@gmail.com" class="icon solid fa-envelope" style="font-size: 1rem;"><span class="label">Email</span></a></li>
-    </ul>
-    <p class="copyright" style="color: #bbb; font-size: 0.5rem; margin-top: 10px;">
-        &copy; Kathiana Thomas. Design based on <a href="http://html5up.net">HTML5 UP</a>.
-    </p>
-</section>
+		</div>
+	</div>
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
 
-</div> 
-</div>
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+</body>
 
-	</body>
 </html>
