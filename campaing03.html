@@ -108,15 +108,30 @@ img {
                                 <p>And yet, there are a few notable differences in the content posted by bigger brands like 100 Percent Pure and ILIA in platforms like IG. For starters, a higher quality of image and video is noticeable among the bigger brands, making the content look much more professional, with the content being more curated in terms of definition and lighting. But beyond that, while Au Naturale does try to replicate this clean and natural aesthetic, the pieces aren't as elaborated in their arragement, and something there isn't even a clear focus when presenting a product. There are some comparisons:</p>
                                
                                 <div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; display: flex; gap: 20px; align-items: flex-start; margin-bottom: 20px; background-color: #fff;">
-    
-    <div style="flex: 1; min-width: 250px;">
-        <a href="https://www.instagram.com/p/DWWoNtdAfwr/?img_index=1" target="_blank">
-            <img src="" alt="ILIA's example" style="width: 100%; border-radius: 5px; box-shadow: 3px 3px 10px rgba(0,0,0,0.1);">
-        </a>
-        <p style="font-size: 0.8em; text-align: center; margin-top: 10px;">
-            <em>Source: <a href="https://www.instagram.com/p/DWWoNtdAfwr/?img_index=1" target="_blank">iliabeauty on Instagram</a></em>
-        </p>
+    <div class="carousel-window">
+    <div class="carousel-slide" id="slider">
+        <div class="slide-item">
+            <a href="https://www.instagram.com/p/DWWoNtdAfwr/?img_index=1" target="_blank">
+                <img src="/images/ILIA1.jpg" alt="ILIA's first example">
+            </a>
+            <p class="caption">
+                <em>Source: <a href="..." target="_blank">iliabeauty on Instagram</a></em>
+            </p>
+        </div>
+
+        <div class="slide-item">
+            <a href="https://www.instagram.com/p/DWWoNtdAfwr/?img_index=1" target="_blank">
+                <img src="images/ILIA2.jpg" alt="Second Example">
+            </a>
+            <p class="caption">
+                <em>Source: <a href="...">iliabeauty on Instagram</a></em>
+            </p>
+        </div>
     </div>
+
+    <button class="btn prev" onclick="moveSlide(-1)">&#10094;</button>
+    <button class="btn next" onclick="moveSlide(1)">&#10095;</button>
+</div>
                                
                                 <p>In some ways, it could be argued that Au Naturale doesn't have an unique voice that would allow them to stand out among the rest of the clean brands.</p>
                                 
