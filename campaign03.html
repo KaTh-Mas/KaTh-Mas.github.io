@@ -27,7 +27,7 @@
     }
 		/* Responsive Flexbox Fix */
 @media screen and (max-width: 736px) {
-    /* Targets the flex containers you created for PRH and HarperCollins */
+    /* Targets the flex containers you created for */
     div[style*="display: flex"] {
         flex-direction: column !important;
         align-items: center !important;
@@ -44,6 +44,22 @@
     div[style*="flex: 1"] {
         margin-bottom: 20px;
     }
+}
+
+		/* Fix for the Featured Cover Image */
+.image.featured {
+    margin: 0 0 2em 0; /* Keeps spacing consistent */
+    max-height: 400px;  /* Adjust this number to your preferred thickness */
+    overflow: hidden;   /* Chops off the excess height */
+    display: flex;
+    align-items: center; /* Centers the image vertically within the crop */
+}
+
+.image.featured img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;  /* Prevents the 'squished' look */
+    object-position: center; /* Ensures the focus is on the middle of the image */
 }
 
 /* Global Image Safety Rule */
@@ -96,7 +112,7 @@ img {
 										<a href="#" class="author"><span class="name">Kathiana Thomas</span><img src="images/profile.jpg" alt="" /></a>
 									</div>
 								</header>
-								<span class="image featured"><img src="images/MallorcaPowder_800x.webp" alt="Penguin Random House Logo" /></span>
+								<span class="image featured"><img src="images/MallorcaPowder_800x.webp" alt="Au Naturale powder" /></span>
 								<p>In this opportunity, I present a sample of Instagram posts for a mock-up campaign for an ethical make-up label, Au Naturale Cosmetics.</p>
 								<p><h2>Which is the branding of Au Naturale?</h2></p>
 								<p>Au Naturale Cosmetics establishes itself not only as a healthier and more natural alternative among the industry, but also a voice that advocates for more transparency and ethical production processes. It's funder, Ashley Prange was a nuclear analyst in Washington D.C. who left her previous job seeking to revolutionarize the beauty industry by putting ethical means at the center, which included establishing partnerships with fair-trade farmers worldwide, avoiding animal cruelty, and only using organic, paraben-free ingredients.</p>
