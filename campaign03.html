@@ -94,7 +94,38 @@
             height: 500px;
             object-fit: contain;
             background: #f9f9f9; 
+
         }
+
+        /* This is the 'frame' of your carousel */
+.carousel-window {
+    max-width: 500px;    /* Limits how big the carousel gets on the page */
+    margin: 20px auto;   /* Centers it and adds some breathing room */
+    overflow: hidden;    /* Hides the images that aren't active */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+/* This is the long 'track' that holds all slides in a row */
+.carousel-slide {
+    display: flex;
+    transition: transform 0.4s ease-in-out; /* Makes the sliding smooth */
+}
+
+/* Individual slide items */
+.slide-item {
+    min-width: 100%;     /* Each slide must be exactly the width of the window */
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+}
+
+.slide-item img {
+    width: 100%;
+    height: 400px;       /* Forces all images to be the same height */
+    object-fit: contain; /* Keeps the full image visible without cropping */
+    background-color: #fff;
+}
         /* --- END OF NEW STUFF --- */
 
 /* Global Image Safety Rule */
@@ -201,7 +232,7 @@ img {
                                
      <p>But also, ILIA produces more appealing influencer-related and partner content. This is both due to how ILIA involves the correct people while delivering high-quality pictures and partnerships with ample benefits for the audience. Also, ILIA creates content with a strong CTA that posibilitates higher engagement.</p>
                                 
-                   <div class="carousel-window">
+    <div class="carousel-window">
     <div class="carousel-slide" id="slider">
         <div class="slide-item">
             <a href="https://www.instagram.com/p/DVEVrOVlM9x/?img_index=1" target="_blank">
