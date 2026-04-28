@@ -97,35 +97,7 @@
 
         }
 
-        /* This is the 'frame' of your carousel */
-.carousel-window {
-    max-width: 500px;    /* Limits how big the carousel gets on the page */
-    margin: 20px auto;   /* Centers it and adds some breathing room */
-    overflow: hidden;    /* Hides the images that aren't active */
-    border: 1px solid #ddd;
-    border-radius: 8px;
-}
-
-/* This is the long 'track' that holds all slides in a row */
-.carousel-slide {
-    display: flex;
-    transition: transform 0.4s ease-in-out; /* Makes the sliding smooth */
-}
-
-/* Individual slide items */
-.slide-item {
-    min-width: 100%;     /* Each slide must be exactly the width of the window */
-    box-sizing: border-box;
-    padding: 10px;
-    text-align: center;
-}
-
-.slide-item img {
-    width: 100%;
-    height: 400px;       /* Forces all images to be the same height */
-    object-fit: contain; /* Keeps the full image visible without cropping */
-    background-color: #fff;
-}
+    
         /* --- END OF NEW STUFF --- */
 
 /* Global Image Safety Rule */
@@ -252,6 +224,16 @@ img {
             </p>
         </div>
     </div>
+
+    <div class="carousel-window">
+    <div class="carousel-slide" id="slider">
+        </div>
+
+    <div style="text-align:center; padding: 10px; background: #f4f4f4;">
+        <button onclick="moveSlide(-1)">❮ Prev</button>
+        <button onclick="moveSlide(1)">Next ❯</button>
+    </div>
+</div>
 
     <div style="flex: 1; min-width: 250px;">
         <a href="https://www.instagram.com/p/Cpx1MwrotPk/" target="_blank">
