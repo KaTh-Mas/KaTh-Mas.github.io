@@ -222,42 +222,29 @@ img {
                                 
  
  <div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; display: flex; flex-wrap: wrap; gap: 40px; justify-content: space-around; margin-bottom: 20px; background-color: #fff;">
-    <div class="carousel-slide" id="slider2">
-        <div class="slide-item">
-            <a href="https://www.instagram.com/p/DVEVrOVlM9x/?img_index=1" target="_blank">
-                <img src="images/Screenshot from 2026-04-24 19-29-02.png" alt="ILIA's first example">
-            </a>
-            <p class="caption">
-                <em>Source: <a href="https://www.instagram.com/iliabeauty/" target="_blank">iliabeauty on Instagram</a></em>
-            </p>
-        </div>
+    
+    <div class="carousel-window" style="flex: 1 1 300px; max-width: 500px;">
+        <div class="carousel-slide" id="slider2">
             <div class="slide-item">
-            <a href="https://www.instagram.com/p/DVXW7cBianw/?img_index=1" target="_blank">
-                <img src="images/Screenshot from 2026-04-24 18-42-22.png" alt="Second Example">
-            </a>
-            <p class="caption">
-                <em>Source: <a href="https://www.instagram.com/iliabeauty/">iliabeauty on Instagram</a></em>
-            </p>
+                <a href="https://www.instagram.com/p/DVEVrOVlM9x/?img_index=1" target="_blank">
+                    <img src="images/Screenshot from 2026-04-24 19-29-02.png" alt="ILIA's first example">
+                </a>
+                <p class="caption"><em>Source: iliabeauty on Instagram</em></p>
+            </div>
+            <div class="slide-item">
+                <a href="https://www.instagram.com/p/DVXW7cBianw/?img_index=1" target="_blank">
+                    <img src="images/Screenshot from 2026-04-24 18-42-22.png" alt="Second Example">
+                </a>
+                <p class="caption"><em>Source: iliabeauty on Instagram</em></p>
+            </div>
         </div>
-    </div>
 
-    <div class="carousel-controls">
-        <button onclick="moveSlider2(-1)">❮</button>
-        <button onclick="moveSlider2(1)">❯</button>
+        <div class="carousel-controls" style="text-align: center;">
+            <button onclick="moveSlider2(-1)">❮</button>
+            <button onclick="moveSlider2(1)">❯</button>
+        </div>
     </div>
 </div>
-
-<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; display: flex; flex-wrap: wrap; gap: 40px; justify-content: space-around; margin-bottom: 20px; background-color: #fff;">
-
-    <div style="flex: 1; min-width: 250px;">
-        <a href="https://www.instagram.com/p/Cpx1MwrotPk/" target="_blank">
-            <img src="images/Screenshot from 2026-04-24 19-30-03.png" alt="Au Naturale post example" style="width: 100%; border-radius: 5px; box-shadow: 3px 3px 10px rgba(0,0,0,0.1);">
-        </a>
-        <p style="font-size: 0.8em; text-align: center; margin-top: 10px;">
-            <em>Source: <a href="https://www.instagram.com/aunaturalelife/" target="_blank">aunaturalelife on Instagram</a></em>
-        </p>
-    </div>
-                  
                   
                   
     
@@ -394,6 +381,21 @@ img {
         if (iliaPos1 < 0) iliaPos1 = slides - 1;
         
         slider.style.transform = `translateX(-${iliaPos1 * 100}%)`;
+    }
+</script>
+
+<script>
+    let currentPos2 = 0;
+    function moveSlider2(direction) {
+        const slider = document.getElementById('slider2');
+        const slides = slider.querySelectorAll('.slide-item').length;
+        
+        currentPos2 += direction;
+        
+        if (currentPos2 >= slides) currentPos2 = 0;
+        if (currentPos2 < 0) currentPos2 = slides - 1;
+        
+        slider.style.transform = `translateX(-${currentPos2 * 100}%)`;
     }
 </script>
 	
