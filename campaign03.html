@@ -176,52 +176,46 @@ img {
 
                                 <p>And yet, there are a few notable differences in the content posted by bigger brands like 100 Percent Pure and ILIA in platforms like IG. For starters, a higher quality of image and video is noticeable among the bigger brands, making the content look much more professional, with the content being more curated in terms of definition and lighting. But beyond that, while Au Naturale does try to replicate this clean and natural aesthetic, the pieces aren't as elaborated in their arragement, and something there isn't even a clear focus when presenting a product. There are some comparisons:</p>
                                
-                                <div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin-bottom: 20px; background-color: #fff;">
-    <div class="carousel-window">
-    <div class="carousel-slide" id="slider">
-        <div class="slide-item">
-            <a href="https://www.instagram.com/p/DWWoNtdAfwr/?img_index=1" target="_blank">
-                <img src="/images/ILIA1.jpg" alt="ILIA's first example">
-            </a>
-            <p class="caption">
-                <em>Source: <a href="https://www.instagram.com/iliabeauty/" target="_blank">iliabeauty on Instagram</a></em>
-            </p>
-        </div>
-
-        <div class="slide-item">
-            <a href="https://www.instagram.com/p/DWWoNtdAfwr/?img_index=1" target="_blank">
-                <img src="images/ILIA2.jpg" alt="Second Example">
-            </a>
-            <p class="caption">
-                <em>Source: <a href="https://www.instagram.com/iliabeauty/">iliabeauty on Instagram</a></em>
-            </p>
-        </div>
-
-        <div class="slide-item">
-            <a href="https://www.instagram.com/p/DTV0FghFG5Q/?img_index=1" target="_blank">
-                <img src="images/ILIA3.jpg" alt="Third Example">
-            </a>
-            <p class="caption">
-                <em>Source: <a href="https://www.instagram.com/iliabeauty/">iliabeauty on Instagram</a></em>
-            </p>
+    <div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; display: flex; flex-wrap: wrap; gap: 40px; justify-content: center; align-items: flex-start; margin-bottom: 20px; background-color: #fff;">
+    
+    <div style="flex: 1 1 350px; max-width: 500px;">
+        <div class="carousel-window">
+            <div class="carousel-slide" id="ilia-slider-1">
+                <div class="slide-item">
+                    <a href="https://www.instagram.com/p/DWWoNtdAfwr/?img_index=1" target="_blank">
+                        <img src="/images/ILIA1.jpg" alt="ILIA's first example">
+                    </a>
+                    <p class="caption"><em>Source: iliabeauty on Instagram</em></p>
+                </div>
+                <div class="slide-item">
+                    <a href="https://www.instagram.com/p/DWWoNtdAfwr/?img_index=1" target="_blank">
+                        <img src="images/ILIA2.jpg" alt="Second Example">
+                    </a>
+                    <p class="caption"><em>Source: iliabeauty on Instagram</em></p>
+                </div>
+                <div class="slide-item">
+                    <a href="https://www.instagram.com/p/DTV0FghFG5Q/?img_index=1" target="_blank">
+                        <img src="images/ILIA3.jpg" alt="Third Example">
+                    </a>
+                    <p class="caption"><em>Source: iliabeauty on Instagram</em></p>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 10px;">
+                <button onclick="moveIlia1(-1)">❮</button>
+                <button onclick="moveIlia1(1)">❯</button>
+            </div>
         </div>
     </div>
 
-       <div class="carousel-controls">
-        <button onclick="moveSlider2(-1)">❮</button>
-        <button onclick="moveSlider2(1)">❯</button>
+    <div style="flex: 1 1 300px; max-width: 500px;">
+        <a href="https://www.instagram.com/p/C87YylrR2fo/" target="_blank">
+            <img src="/images/AuNaturale1.jpg" alt="Au Naturale post example" 
+                 style="width: 100%; border-radius: 5px; box-shadow: 3px 3px 10px rgba(0,0,0,0.1);">
+        </a>
+        <p style="font-size: 0.8em; text-align: center; margin-top: 10px;">
+            <em>Source: <a href="https://www.instagram.com/aunaturalelife/" target="_blank">aunaturalelife on Instagram</a></em>
+        </p>
     </div>
-</div>
-
-<div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; display: flex; flex-wrap: wrap; gap: 40px; justify-content: space-around; margin-bottom: 20px; background-color: #fff;">
-   <div style="flex: 1; min-width: 150px; max-width: 500px; margin: 0 auto;">
-    <a href="https://www.instagram.com/p/C87YylrR2fo/" target="_blank">
-        <img src="/images/AuNaturale1.jpg" alt="Au Naturale post example" 
-             style="width: 100%; border-radius: 5px; box-shadow: 3px 3px 10px rgba(0,0,0,0.1);">
-    </a>
-    <p style="font-size: 0.8em; text-align: center; margin-top: 10px;">
-        <em>Source: <a href="https://www.instagram.com/aunaturalelife/" target="_blank">aunaturalelife on Instagram</a></em>
-    </p>
 </div>
                                
      <p>But also, ILIA produces more appealing influencer-related and partner content. This is both due to how ILIA involves the correct people while delivering high-quality pictures and partnerships with ample benefits for the audience. Also, ILIA creates content with a strong CTA that posibilitates higher engagement.</p>
@@ -384,8 +378,24 @@ img {
     // Auto-slide every 4 seconds or slide on click
     slider.addEventListener('click', showNextSlide);
     setInterval(showNextSlide, 4000); 
+
+    
 </script>
 	
+    <script>
+    let iliaPos1 = 0;
+    function moveIlia1(direction) {
+        const slider = document.getElementById('ilia-slider-1');
+        const slides = slider.querySelectorAll('.slide-item').length;
+        
+        iliaPos1 += direction;
+        
+        if (iliaPos1 >= slides) iliaPos1 = 0;
+        if (iliaPos1 < 0) iliaPos1 = slides - 1;
+        
+        slider.style.transform = `translateX(-${iliaPos1 * 100}%)`;
+    }
+</script>
 	
 	</body>
 </html>
