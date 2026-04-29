@@ -112,6 +112,21 @@
 .slide-item {
     min-width: 100%; /* Ensures only one image shows at a time */
 }
+
+.carousel-window {
+    overflow: hidden; /* This hides the second image until you click */
+    position: relative;
+    width: 100%;
+}
+
+.carousel-slide {
+    display: flex; /* Keeps images in a horizontal row */
+    transition: transform 0.5s ease;
+}
+
+.slide-item {
+    min-width: 100%; /* Forces each image to be the exact size of the window */
+}
     
         /* --- END OF NEW STUFF --- */
 
