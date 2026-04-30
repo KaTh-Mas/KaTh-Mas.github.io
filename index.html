@@ -85,6 +85,14 @@ img {
     height: auto;
     display: block;
 }
+
+/* Add this to your <style> block */
+.image.featured img {
+    width: 100%;
+    max-height: 400px; /* Limits the vertical space they take up */
+    object-fit: cover; /* Crops the image to fit the height instead of stretching */
+    margin-bottom: 1em;
+}
 </style>
 	</head>
 	<body class="is-preload">
