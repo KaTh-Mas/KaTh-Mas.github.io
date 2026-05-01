@@ -101,6 +101,21 @@ img {
     margin-bottom: 1em;
 }
 
+/* Forces all article headers to be the same height */
+#main article > header {
+    min-height: 200px; 
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+/* Ensures the meta section (date/author) doesn't shift the title */
+#main article header .meta {
+    min-width: 180px;
+    text-align: right;
+}
+
 /* USE THIS INSTEAD */
 #wrapper {
     display: flex !important;
