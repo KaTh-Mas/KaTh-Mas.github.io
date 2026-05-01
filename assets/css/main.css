@@ -3352,9 +3352,14 @@ input, select, textarea {
         display: -ms-flex;
         display: flex; /* Changed from block to flex */
     }
+
+	#wrapper {
+    display: flex !important;
+    flex-direction: row !important; /* Changed from row-reverse */
+    justify-content: space-between;
 }
 
-		}
+ }
 
 		@media screen and (max-width: 736px) {
 
