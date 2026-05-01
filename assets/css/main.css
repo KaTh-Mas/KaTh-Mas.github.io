@@ -3347,13 +3347,6 @@ input, select, textarea {
 
 		@media screen and (max-width: 1280px) {
     #wrapper {
-        display: -moz-flex;
-        display: -webkit-flex;
-        display: -ms-flex;
-        display: flex; /* Changed from block to flex */
-    }
-
-	#wrapper {
     display: flex !important;
     flex-direction: row !important; /* Changed from row-reverse */
     justify-content: space-between;
