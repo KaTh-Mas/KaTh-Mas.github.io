@@ -77,6 +77,13 @@
     div[style*="flex: 1"] {
         margin-bottom: 20px;
     }
+
+	#wrapper {
+    flex-direction: column !important; /* Stacks sidebar below content on phones */
+}
+#main, #sidebar {
+    width: 100% !important;
+}
 }
 
 /* Global Image Safety Rule */
@@ -94,14 +101,29 @@ img {
     margin-bottom: 1em;
 }
 
+/* USE THIS INSTEAD */
+#wrapper {
+    display: flex !important;
+    flex-direction: row-reverse !important; /* Sidebar on right. Remove '-reverse' for left. */
+    justify-content: space-between;
+}
+
 #main {
-    width: calc(100% - 380px) !important; /* Forces main to stay at ~70% width */
-    float: left; /* Ensures it hugs the left side */
+    flex: 1 !important;
+    min-width: 0 !important;
+    padding-right: 3em; /* Adds space between text and sidebar */
 }
 
 #sidebar {
-    width: 340px !important; /* Fixed sidebar width */
-    float: right; /* Forces it to stay on the right */
+    width: 340px !important;
+    min-width: 340px !important;
+}
+
+/* Fixes that huge Au Naturale image issue */
+#main img {
+    max-width: 100% !important;
+    height: auto !important;
+}
 }
 </style>
 	</head>
