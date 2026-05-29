@@ -36,72 +36,7 @@
     /* Keeping your stats and meta-text slightly softer but still readable */
     .stats, .meta, .published {
         color: #555555 !important;
-    }
-		/* Responsive Flexbox Fix */
-@media screen and (max-width: 736px) {
-    /* Only targets the content flex containers for stacking */
-    .content section > div[style*="display: flex"] { /* More specific selector */
-        flex-direction: column !important;
-        align-items: center !important;
-    }
-
-    /* Adjust the main header on mobile for better centering if needed */
-    #header .inner { /* Assuming #header is your main header container, or adjust this selector */
-        text-align: center !important;
-    }
-
-    /* Ensure your profile image and text are centered on mobile */
-    .profile-section { /* You might need to add this class to your profile div */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    .profile-section img {
-        margin: 0 auto !important; /* Forces image to center */
-    }
-
-    /* Add some mobile padding to the main content area */
-    #main > .inner {
-        padding: 1.5em !important; /* Increase padding from default for better edge spacing */
-    }
-
-    /* Ensures the image containers take up full width on mobile */
-    div[style*="flex: 1"], div[style*="flex: 2"] {
-        width: 100% !important;
-        max-width: 100% !important;
-        flex: none !important;
-    }
-
-    /* Adds some breathing room between the stacked image and text */
-    div[style*="flex: 1"] {
-        margin-bottom: 20px;
-    }
-
-	#wrapper {
-    flex-direction: column !important; /* Stacks sidebar below content on phones */
-}
-#main, #sidebar {
-    width: 100% !important;
-}
-}
-
-/* Global Image Safety Rule */
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-/* Add this to your <style> block */
-.image.featured img {
-    width: 100%;
-    max-height: 400px; /* Limits the vertical space they take up */
-    object-fit: cover; /* Crops the image to fit the height instead of stretching */
-    margin-bottom: 1em;
-}
-
-/* Forces all article headers to be the same height */
+/* Forces all article headers to be the same height on desktop */
 #main article > header {
     min-height: 200px; 
     display: flex;
@@ -110,10 +45,23 @@ img {
     justify-content: space-between;
 }
 
-/* Ensures the meta section (date/author) doesn't shift the title */
+/* Ensures the meta section doesn't shift the title on desktop */
 #main article header .meta {
     min-width: 180px;
     text-align: right;
+}
+
+/* Fix for mobile screens */
+@media screen and (max-width: 736px) {
+    #main article > header {
+        flex-direction: column !important; /* Stack title and meta vertically */
+        min-height: auto !important;       /* Allow it to shrink */
+    }
+    #main article header .meta {
+        min-width: 100% !important;        /* Take up full width */
+        text-align: left !important;       /* Align left for natural mobile reading */
+        margin-top: 10px;                  /* Add space below the title */
+    }
 }
 
 /* USE THIS INSTEAD */
